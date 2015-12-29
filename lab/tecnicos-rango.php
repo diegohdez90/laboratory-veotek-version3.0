@@ -59,10 +59,16 @@ echo'
 				<table class="table">
 					<tr>
 						<th>Fecha</th>
+						<th>Total</th>
 					</tr>
 					<tr>
 						<td><?php echo $fecha ?> a <?php echo $fecha2 ?></td>
-						
+						<td><?php  $totales = "select count(*) as total from pedido where fecha>='$fecha' and fecha<='$fecha2' and tecnico='$tecnico'";
+	       			$result = mysql_query($totales,$con);
+	       			while ($row = mysql_fetch_array($result)) {
+	       				echo $row['total'];
+	       			}
+					?></td>
 					</tr>
 
 				</table><br>

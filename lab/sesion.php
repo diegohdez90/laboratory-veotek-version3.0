@@ -20,7 +20,7 @@
 					<label>Nombre de usuario</label><input placeholder="Nombre de usuario" name="login">
 				</div>
 				<div class="form-group">
-					<label>Passoword</label><br><input type="password" placeholder="Contrase&ntilde;a" name="password">
+					<label>Password</label><br><input type="password" placeholder="Contrase&ntilde;a" name="password">
 				</div>
 				<br>
 				<input class="btn btn-default" type="submit" value="Iniciar sesi&oacute;n">
