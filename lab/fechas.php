@@ -325,7 +325,7 @@ echo'
   								<th>Tecnico</th>
     							<th>Folio</th>
     							<th>Referencia</th>
-    							
+    							<th>Hora</th>
     							<th>OJO</th>
     							<th>Esfera</th>
     							<th>Cilindro</th>
@@ -346,6 +346,7 @@ echo'
 				  				<td rowspan="2"><?php echo $row['tecnico']; ?></td>
     							<td rowspan="2"><?php echo $row['folio']; ?></td>
     							<td rowspan="2"><?php echo $row['ref']; ?></td>
+    							<td rowspan="2"><?php echo $row['hora']; ?></td>
 
 
     							<td><b>OD</b></td>

@@ -62,6 +62,7 @@ echo'
 					    			<td>Folio</td>
 					    			<td>Referencia</td>
 					    			<td>Fecha</td>
+					    			<td>Hora</td>
 					    			<td>OJO</td>
 					    			<td>Esfera</td>
 					    			<td>Cilindro</td>
@@ -83,6 +84,7 @@ echo'
 					    			<td rowspan="2"><?php echo $rowEmp['folio']; ?></td>
 					    			<td rowspan="2"><?php echo $rowEmp['ref']; ?></td>
 					    			<td rowspan="2"><?php echo $rowEmp['fecha']; ?></td>
+					    			<td rowspan="2"><?php echo $rowEmp['hora']; ?></td>
 					    			<td><b>OD</b></td>
 					    			<td><?php echo $rowEmp['ode1']; ?></td>
 					 				<td><?php echo $rowEmp['odc1']; ?></td>
