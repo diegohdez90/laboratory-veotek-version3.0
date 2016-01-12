@@ -50,14 +50,14 @@ echo'
 
 				<form action="fechas.php" method="get" enctype="multipart/form-data">
 					<div class="form-group">
-						<input class="form-control"type="date" id="date" name="date">
+						<input class="form-control"type="date" id="date" name="date" value="<?php echo date("Y-m-d");?>">
 						<input type="submit" id="submit" value="CONSULTA POR DIA">
 					</div>
 				</form>
 				<form action="fechas-rango.php" method="get" enctype="multipart/form-data">
 					<div class="form-group">
-						<input class="form-control" type="date" id="inputdefault" name="date">
-						<input class="form-control" type="date" id="inputdefault" name="date2">
+						<input class="form-control" type="date" id="inputdefault" name="date" value="<?php echo date('Y-m-d',strtotime('-1 days'));?>">
+						<input class="form-control" type="date" id="inputdefault" name="date2" value="<?php echo date('Y-m-d');?>">
 						<input type="submit" id="submit" value="CONSULTAR POR RANGO">
 					</div>
 				</form>

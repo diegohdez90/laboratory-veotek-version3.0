@@ -62,7 +62,7 @@ echo'
 								?>
 						</select>
 					</div>
-						<input class="form-control" type="date" id="date" name="date"><br>
+						<input class="form-control" type="date" id="date" name="date" value="<?php echo date('Y-m-d');?>"><br>
 						<input class="form-control" type="submit" id="submit" value="CONSULTAR">
 				</form>
 
@@ -83,7 +83,7 @@ echo'
 						</select>
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="date" id="date" name="date"><br><input class="form-control" type="date" id="date2" name="date2"><br>
+						<input class="form-control" type="date" id="date" name="date" value="<?php echo date("Y-m-d",strtotime("-1 days"));?>"><br><input class="form-control" type="date" id="date2" name="date2" value="<?php echo date('Y-m-d');?>"><br>
 						<input class="form-control" type="submit" id="submit" value="CONSULTAR">
 					</div>
 				</form>
