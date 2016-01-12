@@ -13,7 +13,16 @@
 <script src="js/pedidos.js"></script>
 
 </head>
-
+<script type="text/javascript">
+var validate = function() {
+	var res = confirm("Estas seguro de tus datos?");
+	if (res == true) {
+	    return true;
+	} else {
+	    return false;
+	}
+}
+</script>
 
 <body>
 
@@ -45,7 +54,7 @@ echo'
 
 		<div class="row">
 			<div class="col-md-10 pedidos">
-				<form onsubmit="return confirm('Seguro de enviar este pedido?');" action="registrar-pedido.php" method="post" enctype="multipart/form-data">
+				<form onsubmit="return validate();" action="registrar-pedido.php" method="post" enctype="multipart/form-data">
     				<div class="form-group">
 	    				<div class="col-xs-3">
 	    				<?php
@@ -96,6 +105,7 @@ echo'
 									?></select><br>
 								</div>
 							</div>
+							<!--
 					<div class="form-group">
 						<div class="col-xs-3">
 							<label><b>Status</b></label>
@@ -106,6 +116,8 @@ echo'
 							</select>
 						</div>
 					</div>
+
+				-->
 					<div class="form-group">
 						<div class="col-xs-3">
 							<label><b>Armazones</b></label>
@@ -138,7 +150,8 @@ echo'
 							</select>
 						</div>
 					</div>
-						<br><br><br>
+					<br><br><br><br>
+						<br><br><br><br>
 
 									
 										<div class="col-xs-2 od"><br><label><b>OD</b></label></div>

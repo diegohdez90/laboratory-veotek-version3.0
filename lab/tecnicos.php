@@ -297,7 +297,7 @@ echo'
 					<div class="table-responsive">
 						<table class="table">
   							<tr>
-  								
+  								<th>Hora</th>
     							<th>Folio</th>
     							<th>Referencia</th>
 
@@ -320,6 +320,7 @@ echo'
 				<?php 	while ($row = mysql_fetch_array($rs)) { ?>
 							<tr>
 
+    							<td rowspan="2"><?php echo $row['hora']; ?></td>
     							<td rowspan="2"><?php echo $row['folio']; ?></td>
     							<td rowspan="2"><?php echo $row['ref']; ?></td>
 

@@ -22,6 +22,8 @@
                             //1. Crear conexión a la Base de Datos
                         $link = mysqli_connect("localhost","root","veotek");
                                 mysqli_select_db($link, "inventario1");  
+
+                        $hora = date("H:i:s");
                                 
                         $folio = $_POST['folio'];
                         $ref = $_POST['ref'];
@@ -44,7 +46,7 @@
                         //$oip2=$_POST['oip'];
                         //$oib2=$_POST['oib'];
                         $descrip = $_POST['descrip'];
-                        $status = $_POST['status'];
+                        //$status = $_POST['status'];
                         $armazon = $_POST['armazones'];
                         $micas = $_POST['micas'];
                         $materiales = $_POST['materiales'];
@@ -61,7 +63,7 @@
                         $res = mysqli_query($link,"select ref from pedido where ref = '$ref'");
                         $rows = mysqli_num_rows($res);
                         if($rows==0){
-                            $insertar = mysqli_query($link,"insert into pedido (folio,ref,fecha,tecnico,ode1,odc1,odej1,odd1,oda1,odal1,oie2,oic2,oiej2,oid2,oia2,oial2,descripcion,status,armazon,micas,materiales,tratamiento,tipo,ma,mb,med,mdbl) values ('$folio','$ref','$fecha','$tecnico','$ode1','$odc1','$odej1','$odd1','$oda1','$odal1','$oie2','$oic2','$oiej2','$oid2','$oia2','$oial2','$descrip','$status','$armazon','$micas','$materiales','$tratamiento','$tipo','$m_a','$m_b','$m_ed','$m_dbl')");
+                            $insertar = mysqli_query($link,"insert into pedido (folio,ref,fecha,hora,tecnico,ode1,odc1,odej1,odd1,oda1,odal1,oie2,oic2,oiej2,oid2,oia2,oial2,descripcion,armazon,micas,materiales,tratamiento,tipo,ma,mb,med,mdbl) values ('$folio','$ref','$fecha','$hora','$tecnico','$ode1','$odc1','$odej1','$odd1','$oda1','$odal1','$oie2','$oic2','$oiej2','$oid2','$oia2','$oial2','$descrip','$armazon','$micas','$materiales','$tratamiento','$tipo','$m_a','$m_b','$m_ed','$m_dbl')");
                         }
                         else{
                             die("<h3 class='text-center'>Duplicado el valor de Referencia ".$rows. " Valores duplicados</h3>");

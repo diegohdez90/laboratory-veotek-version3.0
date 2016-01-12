@@ -62,12 +62,14 @@ echo'
 							<th>Folio</th>
 							<th>Referencia</th>
 							<th>Fecha</th>
+							<th>Hora</th>
 							<th>Tecnico</th>
 						</tr>
 						<tr>
 							<td><?php echo $rowEmp['folio']; ?></td>
 							<td><?php echo $rowEmp['ref']; ?></td>
 							<td><?php echo $rowEmp['fecha']; ?></td>
+							<td><?php echo $rowEmp['hora']; ?></td>
 							<td><?php echo $rowEmp['tecnico']; ?></td>
 						</tr>
 					</table>
