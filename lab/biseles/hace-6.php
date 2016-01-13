@@ -118,7 +118,7 @@ echo'
 									?>],
 						['Victor',     <?php
 									include('../connection.php');
-		      						$queEmp = "SELECT count(*) as numero  FROM pedido where fecha='$sdateb' and tecnico='Victor'";
+		      						$queEmp = "SELECT count(*) as numero  FROM pedido where fecha='$sdateg' and tecnico='Victor'";
 		    						$resEmp = mysql_query($queEmp, $con) or die(mysql_error());
 		    						$totEmp = mysql_num_rows($resEmp);
 									 while ($rowEmp = mysql_fetch_assoc($resEmp)) {
