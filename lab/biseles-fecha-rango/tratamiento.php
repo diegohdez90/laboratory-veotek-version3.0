@@ -113,9 +113,9 @@ echo'
 						['Transitions',<?php echo $transitions;?>],
 						['Crizal',<?php echo $crizal;?>],
 						['Transitions Crizal',<?php echo $transitions_crizal;?>],
-						['AR Foto',<?php echo $arfoto;?>],
 						['Polarizado',<?php echo $polarizado;?>],
-						['Polarizado AR',<?php echo $polarizado_ar;?>],
+						['Poli-AR',<?php echo $polarizado_ar;?>],
+						['AR Foto',<?php echo $arfoto;?>],
 						['Tinte', <?php echo $tinte;?>]
 						]);
 					var options = {

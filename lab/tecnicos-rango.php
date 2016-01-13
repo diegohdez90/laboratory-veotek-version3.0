@@ -181,7 +181,7 @@ echo'
 
 
 					echo "<tr>";
-       					echo "<td rowspan='10'>";
+       					echo "<td rowspan='11'>";
        						echo "Tratamiento</td></tr>";	 
 	       			$query_tratamiento_BCO = "select count(*) as BCO from pedido where tratamiento = 'BCO' and fecha>='$fecha' and fecha<='$fecha2' and tecnico = '$tecnico'";
 	       			$trat_BCO = mysql_query($query_tratamiento_BCO,$con);
@@ -235,6 +235,12 @@ echo'
 	       			$trat_PolarizadoAR = mysql_query($query_tratamiento_PolarizadoAR,$con);
 	       			while ($row = mysql_fetch_array($trat_PolarizadoAR)) {
 	       				echo "<tr><td>Polarizado-AR</td><td>".$row['PolarizadoAR']."</td></tr>";
+	       			}
+
+	       			$query_tratamiento_Tinte = "select count(*) as Tinte from pedido where tratamiento = 'Tinte' and fecha>='$fecha' and fecha<='$fecha2' and tecnico = '$tecnico'";
+	       			$trat_Tinte= mysql_query($query_tratamiento_Tinte,$con);
+	       			while ($row = mysql_fetch_array($trat_Tinte)) {
+	       				echo "<tr><td>Tinte</td><td>".$row['Tinte']."</td></tr>";
 	       			}
 
 
