@@ -51,14 +51,14 @@ echo'
 					<h3 class="text-center">Biseles</h3>
 					<canvas id="canvas" height="249" width="600"></canvas>
 					<br><br>
+				</div>
+
 					<p class="text-center">
 						<a href="informes-fecha.php"><button  type="submit" class="btn btn-default form-control">INFORMES POR FECHAS</button></a>
 						<a href="informes-tecnico.php"><button  type="submit" class="btn btn-default form-control">INFORMES POR TECNICOS</button></a>
 						<a href="biseles/hoy.php"><button  type="submit" class="btn btn-default form-control">BISELES POR DIA</button></a>
 						<a href="modificados/modificados.php"><button  type="submit" class="btn btn-default form-control">MODIFICADOS</button></a>
 					</p>
-
-				</div>
 
 
 					<?php
